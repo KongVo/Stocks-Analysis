@@ -84,7 +84,7 @@ print("Moving Average determines trend"+ "\n")
 print(mavg)
 
 #Plot Moving Average
-close_px.plot(label='NFLX')
+close_px.plot(label=str(stockTicker))
 mavg.plot(label='mavg')
 plt.legend()
 savePlot("MovingAverage")
@@ -184,5 +184,4 @@ dfreg['Forecast'] = np.nan
 plotPrediction(KNN_Regression_forecast_set,"KNN_Regression_Prediction")
 
 
-
-
+k=input("press close to exit") 
